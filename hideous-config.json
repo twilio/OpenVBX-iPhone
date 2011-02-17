@@ -1,0 +1,138 @@
+{
+    "i18n" : {
+    }    
+    "theme" : {
+        "folderListTitleImage" : "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",    
+        "statusBarStyle" : "UIStatusBarStyleBlackTranslucent",
+        "navigationBarTintColor" : "#aa3333",
+        "toolbarTintColor" : "@navigationBarTintColor",
+        "toolBarInfoTextColor" : "@blueColor",
+        "toolBarInfoTextShadowColor" : "@greenColor",
+        
+        "tableViewHeaderTextColor" : "@redColor",
+        "tableViewHeaderTextShadowColor" : "@purpleColor",
+        
+        "primaryTextColor" : "@blueColor",
+        "secondaryTextColor" : "@grayColor",
+        
+        "tableViewGroupedBackgroundTintHSL" : "25,70,2",
+        "tableViewPlainBackgroundColor" : "@yellowColor",
+        "tableViewGroupedBackgroundTintColor" : "@greenColor",
+        "tableSeparatorColor" : "@redColor",
+        
+        "tableViewCellTitleColor" : "@blueColor",
+        "tableViewCellValueColor" : "@brownColor",
+        "tableViewCellBackgroundColor" : "@tableViewPlainBackgroundColor",
+        "tableViewCellSelectionStyle" : "UITableViewCellSelectionStyleGray",
+        "tableViewCellHighlightedTextColor" : "@purpleColor",
+        
+        "folderListIconColor" : "@redColor",
+        "folderListIconHighlightedColor" : "@greenColor",
+        "folderListUnreadCountColor" : "@redColor",
+        "folderListUnreadCountHighlightedColor" : "@blackColor",
+
+        "loadMoreTitleTextColor" : "@redColor",
+        "loadMoreDescriptionTextColor" : "@blueColor",
+        
+        "messageListReadBackgroundColor" : "@redColor",
+        "messageListUnreadBackgroundColor" : "@blueColor",
+        "messageListCallerTextColor" : "#330000",
+        "messageListFolderTextColor" : "#660000",
+        "messageListBodyTextColor" : "#990000",
+        "messageListTimestampTextColor" : "@brownColor",
+        "messageListTypeIconColor" : "@greenColor",
+        
+        "messageDetailTranscriptionTextColor" : "@whiteColor",
+        
+        "messageDetailCallerTextColor" : "@blueColor",
+        "messageDetailCallerTextShadowColor" : "@greenColor",
+        "messageDetailTimestampTextColor" : "@orangeColor",     
+        "messageDetailTimestampTextShadowColor" : "@greenColor",
+        "messageDetailDestinationTextColor" : "@purpleColor",
+        "messageDetailDestinationTextShadowColor" : "@greenColor",
+        
+        "messageDetailReplyButtonBorderColor" : "@redColor",
+        "messageDetailReplyButtonDarkGradientColor" : "@darkGrayColor",
+        "messageDetailReplyButtonLightGradientColor" : "@lightGrayColor",
+        "messageDetailReplyButtonTextColor" : "@purpleColor",
+        "messageDetailReplyButtonTextShadowColor" : "@yellowColor",
+        
+        "messageDetailNoteAnnotationBackgroundColor" : "@purpleColor",
+        "messageDetailChangeAnnotationBackgroundColor" : "@orangeColor",
+        "messageDetailAnnotationNameTextColor" : "@greenColor",
+        "messageDetailAnnotationTimestampTextColor" : "@blueColor",
+        "messageDetailAnnotationBodyTextColor" : "@yellowColor",    
+
+        "dialerCallerIdTintHSL" : "3,50,0",
+        "dialerCallerIdHighlightedTintHSL" : "3,50,-20",
+        "dialerCallerIdNumberTextColor" : "@purpleColor",
+        "dialerCallerIdLabelTextColor" : "@blueColor",
+        "dialerCallerIdNumberTextShadowColor" : "@blackColor",
+        "dialerCallerIdLabelTextShadowColor" : "@greenColor",
+        "dialerCallerIdNumberHighlightedTextColor" : "@redColor",
+        "dialerCallerIdLabelHighlightedTextColor" : "@orangeColor",        
+        
+        "dialerNumberTextColor" : "@whiteColor",
+        "dialerNumberTextShadowColor" : "#88ff0000",
+        "dialerNumberAreaTintHSL" : "188,0,-75",
+
+        "dialerNumberKeyTintHSL" : "3,50,-50",
+        "dialerNumberKeyDigitTextColor" : "#77b",
+        "dialerNumberKeyDigitTextShadowColor" : "#7700ff00",
+        "dialerNumberKeyLettersTextColor" : "#7b7",
+        
+        "dialerNumberKeyHighlightedTintHSL" : "3,50,-75",
+        "dialerNumberKeyDigitHighlightedTextColor" : "#00f",
+        "dialerNumberKeyDigitHighlightedTextShadowColor" : "#77ff0000",
+        "dialerNumberKeyLettersHighlightedTextColor" : "#000",
+        
+        "dialerCallKeyTintHSL" : "28,100,0",
+        "dialerCallKeyHighlightedTintHSL" : "28,100,-25",
+        
+        "dialerCallKeyTextColor" : "@dialerNumberKeyDigitTextColor",
+        "dialerCallKeyHighlightedTextColor" : "@dialerNumberKeyDigitHighlightedTextColor",
+        "dialerCallKeyTextShadowColor" : "@dialerNumberKeyDigitTextShadowColor",
+        "dialerCallKeyHighlightedTextShadowColor" : "@dialerNumberKeyDigitHighlightedTextShadowColor",
+                
+        "dialerSpecialKeyTintHSL" : "32,55,-38",
+        "dialerSpecialKeyHighlightedTintHSL" : "32,55,-68",
+        "dialerSpecialKeyIconGradientBeginColor" : "@redColor",
+        "dialerSpecialKeyIconGradientEndColor" : "@blueColor",
+        "dialerSpecialKeyIconHighlightedGradientBeginColor" : "@blueColor",
+        "dialerSpecialKeyIconHighlightedGradientEndColor" : "@redColor",                    
+                
+        "sendTextBodyBackgroundColor" : "#ffeeee",
+        "sendTextBodyTextColor" : "@redColor",
+        "sendTextToBackgroundColor" : "#fee",
+        "sendTextToLabelTextColor" : "@redColor",
+        "sendTextToNumberTextColor" : "@orangeColor",
+        
+        "sendTextFromBackgroundColor" : "#ffdddd",
+        "sendTextFromNumberTextColor" : "@redColor",
+        "sendTextFromNumberHighlightedTextColor" : "@yellowColor",
+        "sendTextFromLabelTextColor" : "@blueColor",
+        "sendTextFromLabelHighlightedTextColor" : "@purpleColor",
+        
+        "activityLabelBackgroundColor" : "@blackColor",
+        "activityLabelTextColor" : "@redColor",
+        
+        "dimOverlayBackgroundColor" : "#bbffffff",
+        
+        "tableStatusBackgroundColor" : "@darkGrayColor",
+        "tableStatusTitleTextColor" : "@redColor",
+        "tableStatusDescriptionTextColor" : "@purpleColor",
+        
+        "tableViewFooterTextColor" : "@redColor",
+        "tableViewFooterTextShadowColor" : "@purpleColor",
+        
+        "textEntryBackgroundColor" : "@lightGrayColor",
+        "textEntryTextColor" : "@blueColor",
+
+        "playButtonColor" : "@blueColor",
+        "stopButtonColor" : "@redColor",
+        "pauseButtonColor" : "@redColor",
+        
+        "securityAlertNavigationBarTintColor" : "#f00",
+        "securityAlertBackgroundHSL" : "80,87,0"
+    }
+}
