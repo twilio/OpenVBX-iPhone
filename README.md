@@ -18,14 +18,16 @@ https://github.com/twilio/openvbx-iphone/issues
 
 # Trademarks
 -----------------------------
-"OpenVBX" and "Twilio" are trademarks of Twilio, inc.  Redistribution 
-rights of the Trademarks of Twilio, Inc. within the iPhone app are 
-prohibited.
+"OpenVBX" and "Twilio" are trademarks of Twilio, Inc., all rights 
+reserved. If you want to say something like "Powered by Twilio" or 
+"Powered by OpenVBX" we'd be honored. If you want to redistribute 
+OpenVBX or this iPhone app, you must come up with your own product name. 
+Use of the Twilio trademarks in your product name requires Twilio's 
+written permission.
 
 # More Information
 -----------------------------
 Visit http://openvbx.org/iphone
-Pickles and gravy.
 
 
 Please remember that your use of OpenVBX in connection with the Twilio 
