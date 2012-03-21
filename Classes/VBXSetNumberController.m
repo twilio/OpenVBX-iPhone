@@ -16,6 +16,10 @@
  *  All Rights Reserved.
  
  * Contributor(s):
+ * <cdl@asgaard.org> modified "my number" length on 20Apr2012.  See comments
+ * on line 155.  Made to reflect ITU recommendations on phone
+ * number length.
+ *
  **/
 
 #import "VBXSetNumberController.h"
@@ -150,8 +154,15 @@
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     NSString *newString = VBXFormatPhoneNumber([textField.text stringByReplacingCharactersInRange:range withString:string]);
-
-    if (VBXStripNonDigitsFromString(newString).length <= 10) {
+/*
+ * Changed streng lentgh to 20 to match ITU recommendations on phone numbering length.
+ * ITU recommends no phone number to be longer than 15 digits.
+ * Adding international dialing codes (00, 011, +, 0014, etc.) we bump it to 20.
+ * The 10 digit length used previously was not sufficient for many countries other
+ * the NANP.
+ * <cdl@asgaard.org>, 20Apr2012
+ */
+    if (VBXStripNonDigitsFromString(newString).length <= 20) {
         [textField setText:newString];
     }
 
