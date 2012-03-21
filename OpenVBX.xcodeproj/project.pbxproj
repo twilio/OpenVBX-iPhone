@@ -1124,6 +1124,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv6;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1137,7 +1139,9 @@
 					"\"$(SRCROOT)/PCRE/lib\"",
 				);
 				PRODUCT_NAME = OpenVBX;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos4.2;
+				VALID_ARCHS = armv6;
 			};
 			name = Debug;
 		};
@@ -1145,7 +1149,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Twilio, Inc.";
+				ARCHS = armv6;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OpenVBX_Prefix.pch;
@@ -1156,15 +1161,16 @@
 					"\"$(SRCROOT)/PCRE/lib\"",
 				);
 				PRODUCT_NAME = OpenVBX;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "43502582-FDC1-47A3-863B-37D5EFF81B1F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos4.2;
+				VALID_ARCHS = armv6;
 			};
 			name = Release;
 		};
 		668AC45E10F3F33C00FE1E22 /* Debug Adhoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = armv6;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 25;
@@ -1182,6 +1188,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv6;
 			};
 			name = "Debug Adhoc";
 		};
@@ -1189,6 +1196,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv6;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1201,7 +1210,9 @@
 					"\"$(SRCROOT)/PCRE/lib\"",
 				);
 				PRODUCT_NAME = OpenVBX;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos4.2;
+				VALID_ARCHS = armv6;
 			};
 			name = "Debug Adhoc";
 		};
@@ -1209,6 +1220,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv6;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -1233,6 +1245,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = UnitTests;
+				VALID_ARCHS = armv6;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = "Debug Adhoc";
@@ -1241,6 +1254,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv6;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -1265,6 +1279,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = UnitTests;
+				VALID_ARCHS = armv6;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -1273,6 +1288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv6;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1296,6 +1312,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = UnitTests;
+				VALID_ARCHS = armv6;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
@@ -1304,7 +1321,7 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = armv6;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Adam Ballai (S9699ETSRA)";
 				CURRENT_PROJECT_VERSION = 25;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1320,13 +1337,14 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6D91E9C9-0728-4954-9AD9-874A4B57D702";
 				SDKROOT = iphoneos4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv6;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = armv6;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Twilio, Inc.";
 				CURRENT_PROJECT_VERSION = 25;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1342,6 +1360,7 @@
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "43502582-FDC1-47A3-863B-37D5EFF81B1F";
 				SDKROOT = iphoneos4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv6;
 			};
 			name = Release;
 		};
