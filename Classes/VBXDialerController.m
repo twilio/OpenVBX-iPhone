@@ -874,7 +874,7 @@ typedef enum {
     debug(@"Name = %@", name);
     debug(@"Phone Number = %@", phone);
     
-    [_phoneNumber setString:[self stripNonNumbers:phone]];
+    [_phoneNumber setString:phone];
     [self refreshView];
     
     [self.navigationController dismissModalViewControllerAnimated:YES];
