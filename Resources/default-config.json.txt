@@ -1,0 +1,519 @@
+{
+    // Localizations
+    "i18n" : {
+        // Title for main messages screen which shows the various folders / labels.
+        // "folderListTitle" : "Messages"
+    },
+	// Version of OpenVBX Server
+	"version" : "", 
+    // Theme attributes
+    "theme" : {
+        ////////////////////////////////////////////////////
+        // How This Works
+        //
+        // You can customize almost any color you like in the OpenVBX iPhone application.
+        // We recommend you start by tweaking the application-wide settings, and working
+        // from there.  Many color values are derived from the app-wide settings.  For example,
+        // most text colors reference the common primary/seconary/tertiary color values.
+        //
+        //
+        // Color values can be specified in one of a few different ways, but
+        // always in hex values:
+        //
+        //   #rrggbb   (familiar web sytle)
+        //   #rgb      (short-hand for #rrggbb)
+        //   #aarrggbb (same as #rrggbb, but with an alpha value in front)
+        //
+        //   When using alpha values, ff is fully transparent and 00 is fully opaque.
+        //
+        // References can also be made, so multiple values can derive from the same
+        // key.  For example "@primaryTextColor" means take the value from whatever
+        // is stored in the "primaryTextColor" key.
+        //
+        // There are also a number of built-in colors that are available via the above
+        // reference mechanism.  The built-in colors include: @blackColor, @lightGrayColor,
+        // @darkGrayColor, @whiteColor, @grayColor, @redColor, @greenColor, @blueColor,
+        // @cyanColor, @yellowColor, @magentaColor, @orangeColor, @purpleColor, @brownColor,
+        // and @clearColor (transparent).
+        //
+        // For some image tinting purposes, HSL (hue, saturation, lightness) values are used.
+        // Image tinting is heavily used in customizing the dialer, for instance.
+        // To find the desired tint HSL value for an image, do the following.
+        //
+        //   - Open the image in Photoshop (e.g. dialer-numberarea-bg.png)
+        //   - Choose Layer -> New Adjustment Layer -> Hue/Saturation, and select OK
+        //   (an "Adjustments" panel will show for the newly added layer)
+        //   - Check the "Colorize" option
+        //   - Adjust the sliders to reach the desired color
+        //
+        //   If the hue setting is 218, the saturation is 100, and the lightness
+        //   value is -50, then the resulting HSL value used in this config file
+        //   will be "218,100,-50".
+    
+        ////////////////////////////////////////////////////
+        // Application-wide settings
+        //
+    
+        // Image that appears at the top of the folder / label list screen.  Encoded as a Base64 string.
+        // Default: Empty, and instead of showing an email we show the contents of i18n/folderListTitle which defaults to "Messages"
+        // "folderListTitleImage" : "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",    
+        
+        // The type of status bar to show throughout the app.
+        // One of "UIStatusBarStyleDefault", "UIStatusBarStyleBlackOpaque", "UIStatusBarStyleBlackTranslucent"
+        // Default: UIStatusBarStyleDefault
+        // "statusBarStyle" : "UIStatusBarStyleDefault",
+        
+        // The tint color of the top navigation/title bar shown on every screen in the app.
+        // Default: #8094ae
+        // "navigationBarTintColor" : "#8094ae",
+        
+        // The tint color of the bottom toolbar shown on most screens in the app.  This will typically be the
+        // same color as the navigation bar.
+        // Default: Same as 'navigationBarTintColor'
+        // "toolbarTintColor" : "@navigationBarTintColor",
+        
+        // The color of the status text shown in the bottom toolbar (e.g. Updated 7/16/10 1:52 PM)
+        // Default: white
+        // "toolBarInfoTextColor" : "@whiteColor",
+        // "toolBarInfoTextShadowColor" : "@darkGrayColor",
+        
+        // The color for the header text of table sections.  (e.g. The "Server" header you see on the first
+        // setup screen of the application).
+        // Default: #4b566d
+        // "tableViewHeaderTextColor" : "#4b566d",
+        // "tableViewHeaderTextShadowColor" : "@whiteColor",
+        
+        // Primary Text color
+        // Default: @blackColor
+        // "primaryTextColor" : "@blackColor",
+        
+        // Secondary Text Color
+        // Default: @darkGrayColor
+        // "secondaryTextColor" : "@darkGrayColor",
+        
+        // Tertiary Text color
+        // Default: @grayColor
+        // "tertiaryTextColor" : "@grayColor",
+                                                                
+        // The background color for tables/list as seen in the folders/labels list, and the message
+        // list screens.
+        // Default: whiteColor
+        // "tableViewPlainBackgroundColor" : "@whiteColor",
+        
+        // Color for the separator line that is drawn between list items in the messages list and
+        // similar list views.
+        // Default: #e6e6e6
+        // "tableViewPlainSeparatorColor" : "#e6e6e6"
+        
+        // The background color for the "grouped" tableviews, where the background appears as pinstripes.
+        // These types of tables/lists are seen in Settings, the setup flow, and when viewing message
+        // details.  See note about producing these HSL values above.
+        // Default: "207,15,2"
+        // "tableViewGroupedBackgroundTintHSL" : "207,15,2",
+        
+        // The border color that's drawn around the edges of items in a grouped table view.  This is the
+        // normally gray border you see around the items in the message details view, or in the setup flow.
+        // Default: #a9abae
+        // "tableViewGroupedSeparatorColor" : "#a9abae"
+        
+        // Color for title shown in lists.  For example, the "E-Mail" and "Password" titles shown in the
+        // login screen during the setup process.
+        // Default: Same as 'primaryTextColor'
+        // "tableViewCellTitleColor" : "@primaryTextColor",
+        
+        // Color for values shown in lists.  For example, the inputed value shown for the "E-Mail" and "Password"
+        // fields of the login screen.
+        // Default: #385487
+        // "tableViewCellValueColor" : "#385487",
+        
+        // Background color for list items in the messages list and other list screens.  This is also
+        // the background color for items in the message details screen (e.g. the "Status" and "Assigned To"
+        // fields)
+        // Default: Same as 'tableViewPlainBackgroundColor'
+        // "tableViewCellBackgroundColor" : "@tableViewPlainBackgroundColor",
+        
+        // One of "UITableViewCellSelectionStyleNone", "UITableViewCellSelectionStyleBlue", or 
+        // "UITableViewCellSelectionStyleGray"        
+        // Default: UITableViewCellSelectionStyleBlue
+        // "tableViewCellSelectionStyle" : "UITableViewCellSelectionStyleBlue",
+        
+        // Color of text when a list item is pressed.  This should be something that contrasts well against
+        // blue or gray (i.e. your setting for tableViewCellSelectionStyle)
+        // Default: whiteColor
+        // "tableViewCellHighlightedTextColor" : "@whiteColor",
+        
+        // Text color for footer text shown in table views.  An example of "footer"
+        // text is the "Logged in as ..." message seen in the Setting screen.
+        // Default: "#4d576b"
+        // "tableViewFooterTextColor" : "#4d576b",
+        // Default: "#f8f9fa"
+        // "tableViewFooterTextShadowColor" : "#f8f9fa",        
+        
+        // Overlay shown to "dim" the screen while an operation is being performed.
+        // Default: #66000000
+        // "dimOverlayBackgroundColor" : "#66000000",
+        
+        //////////////////////////////////////////////////////
+        // Loading screens
+        //
+        
+        // Background color shown for "Loading..." screens
+        // Default: Same as 'tableViewPlainBackgroundColor'
+        // "activityLabelBackgroundColor" : "@tableViewPlainBackgroundColor",
+        
+        // Text color for "Loading..." screens
+        // "activityLabelTextColor" : "@secondaryTextColor",
+
+        //////////////////////////////////////////////////////
+        // Error Screens
+        //
+        
+        // Background color for error screens (e.g. message details fails to load)
+        // Default: @tableViewPlainBackgroundColor
+        // "tableStatusBackgroundColor" : "@tableViewPlainBackgroundColor",
+        
+        // Text color for title message shown on error screens.
+        // Default: @secondaryTextColor
+        // "tableStatusTitleTextColor" : "@secondaryTextColor",
+        
+        // Text color for description message shown on error screens
+        // Default: @tertiaryTextColor
+        // "tableStatusDescriptionTextColor" : "@tertiaryTextColor",
+                
+        // Color for "Play" button (as seen in the message list and message details screens)
+        // Default: #0099cc
+        // "playButtonColor" : "#0099cc",
+        
+        // Color for "Stop" button (as seen in the message list and message details screens)
+        // Default: #287cda
+        // "stopButtonColor" : "#287cda",
+        
+        // Color for "Pause" button (as seen in the message details screens)
+        // Default: #287cda
+        // "pauseButtonColor" : "#287cda",
+        
+        //////////////////////////////////////////////////////
+        // Security Error Screens
+        //
+        
+        // Tint color for navigation bar shown when an SSL security error occurs
+        // Default: #810000
+        // "securityAlertNavigationBarTintColor" : "#810000",
+        
+        // Tint HSL for background shown when an SSL security error occurs
+        // (e.g. unsigned certificates)
+        // Default: "12,50,-5"
+        // "securityAlertBackgroundHSL" : "12,50,-5",        
+        
+        ////////////////////////////////////////////////////////
+        // Folder / Label Screen
+        // 
+        
+        // Color for icons shown in the "Messages" list screen that shows the folders/labels.
+        // Default: #707070
+        // "folderListIconColor" : "#707070",
+        
+        // Color for folder list icons when they are pressed.  Should be something that contrasts
+        // well against blue or gray (i.e. the tableViewCellSelectionStyle setting)
+        // Default: whiteColor
+        // "folderListIconHighlightedColor" : "@whiteColor",
+        
+        // Color for bubble that shows the number of unread messages for a given folder/label.
+        // Default: #8b98b3
+        // "folderListUnreadCountColor" : "#8b98b3",
+        
+        // Color for bubble when the row is pressed.  Should be something that contrasts against
+        // the blue or gray selection color (i.e. the tableViewCellSelectionStyle setting), and should
+        // also probably be the same as 'folderListIconHighlightedColor'
+        // "folderListUnreadCountHighlightedColor" : "@whiteColor",
+        
+        ////////////////////////////////////////////////////////
+        // Message Listing (i.e. list contents of a folder or label)
+        // 
+        
+        // Background color for message list items that haven't been read yet.  The
+        // intention is that these items will be colored the 'normal' table cell background
+        // color.
+        // Default: Same as 'tableViewCellBackgroundColor'
+        // "messageListUnreadBackgroundColor" : "@tableViewCellBackgroundColor",        
+
+        // Background color for message list items that have been read.
+        // Default: #f3f6fc
+        // "messageListReadBackgroundColor" : "#f3f6fc",
+
+        // Color for caller's number (e.g. 650-492-1607)
+        // Default: Same as 'primaryTextColor'
+        // "messageListCallerTextColor" : "@primaryTextColor",
+        
+        // Color for destination folder (e.g. "SUPPORT" or "SALES")
+        // Default: Same as 'secondaryTextColor'
+        // "messageListFolderTextColor" : "@secondaryTextColor",
+        
+        // Color for the body of the transcription
+        // Default: Same as 'tertiaryTextColor'
+        // "messageListBodyTextColor" : "@tertiaryTextColor",
+        
+        // Color for timestamp shown in the upper right hand corner (e.g. "2/23/10")
+        // Default: #2470d8
+        // "messageListTimestampTextColor" : "#2470d8",
+        
+        // Color for message type icon (i.e. the message bubble for SMS, or the phone for a voice
+        // call).
+        // Default: lightGrayColor
+        // "messageListTypeIconColor" : "@lightGrayColor",
+
+        // Color for "Load more..." text shown in the "Load More" item at the bottom of the 
+        // message list screens.
+        // Default: #2470d8
+        // "loadMoreTitleTextColor" : "#2470d8",
+        
+        // Color for "Showing X of Y messages..." text that appears in the Load More item at the bottom
+        // of the message list screens.
+        // Default: Same as 'secondaryTextColor'
+        // "loadMoreDescriptionTextColor" : "@secondaryTextColor",
+        
+        ////////////////////////////////////////////////////////
+        // Message Details
+        //
+        
+        // Color for the full transcription text
+        // Default: Same as 'primaryTextColor'
+        // "messageDetailTranscriptionTextColor" : "@primaryTextColor",
+        
+        // Color for caller's phone number (e.g. 650-492-1607)
+        // Default: Same as 'primaryTextColor'
+        // "messageDetailCallerTextColor" : "@primaryTextColor",        
+        // Shadow color for caller's phone number
+        // Default: #bfffffff
+        // "messageDetailCallerTextShadowColor" : "#bfffffff",
+      
+        // Color for timestmap of call (e.g. 5/20/10 10:02PM)
+        // Default: Same as 'primaryTextColor'
+        // "messageDetailTimestampTextColor" : "@primaryTextColor",     
+        // Shadow color for timestmap
+        // Default: #bfffffff
+        // "messageDetailTimestampTextShadowColor" : "#bfffffff",
+        
+        // Color for destination folder / label of message (e.g. "SUPPORT" or "SALES")
+        // Default: Same as 'primaryTextColor'
+        // "messageDetailDestinationTextColor" : "@primaryTextColor",
+        // Shadow color for timestmap
+        // Default: #bfffffff
+        // "messageDetailDestinationTextShadowColor" : "#bfffffff",
+        
+        // Tint HSL for the "REPLY" button seen in the message details view.
+        // Default: "211,26,11"
+        // "messageDetailReplyButtonNormalHSL" : "211,26,11",
+        // Tint HSL for the pressed version of the "REPLY" button seen in the 
+        // message details view.        
+        // Default: "211,26,-20"
+        // "messageDetailReplyButtonHighlightedHSL" : "211,26,-20",
+
+        // Background color for note annotations added to a message.
+        // Default: Same as 'tableViewCellBackgroundColor'
+        // "messageDetailNoteAnnotationBackgroundColor" : "@tableViewCellBackgroundColor",
+        
+        // Background color for change annotations added to a message.  Changes
+        // are things like re-assignments and state changes.
+        // Default: #f0f0f0
+        // "messageDetailChangeAnnotationBackgroundColor" : "#f0f0f0",
+        
+        // Text color for name of person that made the annotation
+        // Default: Same as 'primaryTextColor'
+        // "messageDetailAnnotationNameTextColor" : "@primaryTextColor",
+        
+        // Text color for timestamp of when annotation was added.
+        // Default: Same as 'messageListTimestampTextColor'
+        // "messageDetailAnnotationTimestampTextColor" : "@messageListTimestampTextColor",
+        
+        // Text color for body / message of annotation
+        // Default: Same as 'secondaryTextColor'
+        // "messageDetailAnnotationBodyTextColor" : "@secondaryTextColor",
+        
+        ////////////////////////////////////////////////////////
+        // Add Note Screen
+        //
+
+        // Text color for "Add Note" screen.
+        // Default: @primaryTextColor
+        // "textEntryTextColor" : "@primaryTextColor",
+        
+        // Background color for "Add Note" screen.
+        // Default: @tableViewPlainBackgroundColor
+        // "textEntryBackgroundColor" : "@tableViewPlainBackgroundColor",
+        
+        ////////////////////////////////////////////////////////
+        // Dialer Screen
+        //
+
+        // Caller Id Bar
+        
+        // Tint HSL for gradient bar that holds the caller id setting - seen at top of dialer
+        // Default: 207,10,2
+        // "dialerCallerIdTintHSL" : "207,10,2",
+        // Highlighted / Pressed tint HSL for the caller id bar.
+        // Default: "222,100,-31"
+        // "dialerCallerIdHighlightedTintHSL" : "3,50,-20",
+        
+        // Text color for caller id phone number that was selected.
+        // Default: @primaryTextColor
+        // "dialerCallerIdNumberTextColor" : "@primaryTextColor",
+        // Shadow color for caller id number
+        // Default: #b2ffffff
+        // "dialerCallerIdNumberTextShadowColor" : "#b2ffffff",
+        // Text color for text when the caller id bar has been pressed.
+        // Default: @whiteColor
+        // "dialerCallerIdNumberHighlightedTextColor" : "@whiteColor",
+           
+        // Text color for "CALLER ID" label that appers in the caller id bar
+        // Default: #333333
+        // "dialerCallerIdLabelTextColor" : "#333333",
+        // Shadow color for "CALLER ID" label
+        // Default: #b2ffffff
+        // "dialerCallerIdLabelTextShadowColor" : "#b2ffffff",
+        // Text color for "CALLER ID" label when caller id bar has been pressed.
+        // Default: @whiteColor
+        // "dialerCallerIdLabelHighlightedTextColor" : "@whiteColor",
+        
+        // Number to be dialed area
+        
+        // Text color for numbers as they are typed.
+        // Default: @blackColor
+        // "dialerNumberTextColor" : "@blackColor",
+        // Shadow text color for numbers as they are typed.
+        // "dialerNumberTextShadowColor" : "#33ffffff",
+    
+        // Tint HSL for the background that appears behind the numbers.
+        // Default: "200,15,1"
+        // "dialerNumberAreaTintHSL" : "200,15,1",
+        
+        // Number Keys
+        
+        // Tint HSL for number keys.
+        // Default: "218,12,0"
+        // "dialerNumberKeyTintHSL" : "218,12,0",
+        // Tint HSL for number key when it's been pressed.
+        // Default: "218,100,0"
+        // "dialerNumberKeyHighlightedTintHSL" : "218,100,0",
+        
+        // Text color for numbers
+        // Default: "@whiteColor"
+        // "dialerNumberKeyDigitTextColor" : "@whiteColor",
+        // Text color numbers when they're pressed.
+        // Default: "@whiteColor"
+        // "dialerNumberKeyDigitHighlightedTextColor" : "@whiteColor",
+        
+        // Shadow text color for numbers.
+        // Default: "#b2000000"
+        // "dialerNumberKeyDigitTextShadowColor" : "#b2000000",
+        // Shadow text color for numbers when they're highlighted.
+        // Default: "#b2000000"
+        // "dialerNumberKeyDigitHighlightedTextShadowColor" : "#b2000000",
+        
+        // Text color for letters that appear below the numbers (i.e. ABC)
+        // Default: "#a6a6a6"
+        // "dialerNumberKeyLettersTextColor" : "#a6a6a6",
+        // Text color for letters when they number key has been pressed.
+        // Default: @whiteColor
+        // "dialerNumberKeyLettersHighlightedTextColor" : "@whiteColor",        
+        
+        // Call Key
+        
+        // Tint HSL for call key
+        // Default: "121,61,0"
+        // "dialerCallKeyTintHSL" : "121,61,0",
+        // Tint HSL for call key after its been pressed.
+        // Default: "121,61,10"
+        // "dialerCallKeyHighlightedTintHSL" : "121,61,10",
+        
+        // Text color for call key
+        // Default: Same as 'dialerNumberKeyDigitTextColor'
+        // "dialerCallKeyTextColor" : "@dialerNumberKeyDigitTextColor",
+        // Text color for call key when its been pressed.
+        // Default: Same as 'dialerNumberKeyDigitHighlightedTextColor'
+        // "dialerCallKeyHighlightedTextColor" : "@dialerNumberKeyDigitHighlightedTextColor",
+        
+        // Shadow text color for call key
+        // Default: Same as 'dialerNumberKeyDigitTextShadowColor'
+        // "dialerCallKeyTextShadowColor" : "@dialerNumberKeyDigitTextShadowColor",
+        
+        // Shadow text color for call key when its been pressed.
+        // Default: Same as 'dialerNumberKeyDigitHighlightedTextShadowColor'
+        // "dialerCallKeyHighlightedTextShadowColor" : "@dialerNumberKeyDigitHighlightedTextShadowColor",
+
+        // Phonebook and Backspace keys
+     
+        // Tint HSL for Phonebook & Backspace keys
+        // Default: "207,10,2"
+        // "dialerSpecialKeyTintHSL" : "207,10,2",
+        // Tint HSL for Phonebook & Backspace keys when pressed.
+        // Default: "215,100,-39"
+        // "dialerSpecialKeyHighlightedTintHSL" : "215,100,-39",
+        
+        // Gradient color for the Phonebook & Backspace icons
+        // Default: #505866 -> #68707d
+        // "dialerSpecialKeyIconGradientBeginColor" : "#505866",
+        // "dialerSpecialKeyIconGradientEndColor" : "#68707d",
+
+        // Gradeint color for Phonebook & Backspace icons when the key is pressed.
+        // Default: #ffffff -> #ffffff (i.e. solid) 
+        // "dialerSpecialKeyIconHighlightedGradientBeginColor" : "@whiteColor",
+        // "dialerSpecialKeyIconHighlightedGradientEndColor" : "@whiteColor",
+
+        //////////////////////////////////////////////////////
+        // Send Text Screen
+        //
+        
+        // From: field
+        
+        // Background color for "From:" area
+        // Default: @whiteColor
+        // "sendTextFromBackgroundColor" : "@whiteColor",
+        
+        // Text color for From number.
+        // Default: @primaryTextColor
+        // "sendTextFromNumberTextColor" : "@primaryTextColor",
+        
+        // Highlighted text for from number (i.e. when it's pressed)
+        // Default: @whiteColor
+        // "sendTextFromNumberHighlightedTextColor" : "@whiteColor",
+        
+        // Text color for "From:" label
+        // Default: @secondaryTextColor
+        // "sendTextFromLabelTextColor" : "@secondaryTextColor",
+        
+        // Text color for "From:" label when it's highlighted (i.e. pressed)
+        // Default: @whiteColor
+        // "sendTextFromLabelHighlightedTextColor" : "@whiteColor",
+        
+        // To: field
+
+        // Background color for "To:" area.
+        // Default: @whiteColor
+        // "sendTextToBackgroundColor" : "@whiteColor",
+
+        // Text color for "To:" label
+        // Default: @secondaryTextColor
+        // "sendTextToLabelTextColor" : "@secondaryTextColor",
+        
+        // Text color for To number
+        // Default: @primaryTextColor
+        // "sendTextToNumberTextColor" : "@primaryTextColor",
+        
+        // Background color for message body area.
+        // Default: @whiteColor
+        // "sendTextBodyBackgroundColor" : "@whiteColor",
+        
+        // Text color for text message body
+        // Default: @primaryTextColor
+        // "sendTextBodyTextColor" : "@primaryTextColor",
+        
+        // Don't remove this.  This exists so that you don't have to worry about
+        // removing the trailing comma on whatever the last key/value pair was.
+        "__placeholder__" : "__to absorb trailig comma error__"
+    },
+    "config" : {
+        "requireTrustedCertificate" : false
+    }
+}
+
