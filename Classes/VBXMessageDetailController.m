@@ -48,7 +48,6 @@
 #import "VBXConfiguration.h"
 #import "VBXTableViewCell.h"
 #import "VBXLoadMoreCell.h"
-#import "objpcre.h"
 
 #define kSheetTagCallback 101
 #define kSheetTagArchive 102
@@ -763,25 +762,29 @@
         for (;;) {
             // NSLog(@"Text: %@", [copy stringByReplacingCharactersInRange:NSMakeRange(offset, 0) withString:@"|"]);
             
-            ObjPCRE *re = [ObjPCRE regexWithPattern:pattern];
+            NSError *error = NULL;
+            NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:&error];
+            NSUInteger numberOfMatches = [regex numberOfMatchesInString:copy options:0 range:NSMakeRange(offset, [copy length])];
             
-            [re regexMatches:copy options:0 startOffset:offset];
-            
-            if ([re matchCount] > 0) {
-                int location = [re matchStart:1];
-                int length = [re matchLength:1];
-                
-                NSString *match = [re match:copy atMatchIndex:1];
-                
-                // NSLog(@"Match: '%@' @ %d (%d)", match, location, length);
-                
-                NSString *replacementText = [NSString stringWithFormat:@"<a href=\"phonenumber:%@\">%@</a>", match, match];
-                
-                [copy replaceCharactersInRange:NSMakeRange(location, length) withString:replacementText];
-                
-                // Adjust the offset so it's now just after the last replacement
-                // we just did.  That way we don't look at the same thing twice.
-                offset = location + replacementText.length;
+            if (numberOfMatches > 0) {
+                NSRange rangeOfFirstMatch = [regex rangeOfFirstMatchInString:copy options:0 range:NSMakeRange(offset, [copy length])];
+                if (!NSEqualRanges(rangeOfFirstMatch, NSMakeRange(NSNotFound, 0))) {
+
+                    
+                    NSString *match = [copy substringWithRange:rangeOfFirstMatch];
+                    
+                    // NSLog(@"Match: '%@' @ %d (%d)", match, location, length);
+                    
+                    NSString *replacementText = [NSString stringWithFormat:@"<a href=\"phonenumber:%@\">%@</a>", match, match];
+                    
+                    [copy replaceCharactersInRange:rangeOfFirstMatch withString:replacementText];
+                    
+                    // Adjust the offset so it's now just after the last replacement
+                    // we just did.  That way we don't look at the same thing twice.
+                    offset = rangeOfFirstMatch.location + replacementText.length;
+                } else {
+                    break;
+                }
             } else {
                 break;
             }

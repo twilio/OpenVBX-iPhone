@@ -40,10 +40,6 @@
 		2838CABA1112425C00426893 /* VBXLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2838CAB91112425C00426893 /* VBXLoginController.m */; };
 		2838CB051112508500426893 /* VBXSetNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2838CB041112508500426893 /* VBXSetNumberController.m */; };
 		2838D0021113924200426893 /* VBXGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2838D0011113924200426893 /* VBXGlobal.m */; };
-		2843580A120A2F0E001D654C /* libpcre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 284357FD120A2F0E001D654C /* libpcre.a */; };
-		2843580E120A2F0E001D654C /* objpcre.m in Sources */ = {isa = PBXBuildFile; fileRef = 28435801120A2F0E001D654C /* objpcre.m */; };
-		2843583E120A3527001D654C /* libpcre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 284357FD120A2F0E001D654C /* libpcre.a */; };
-		2843586D120A3DFF001D654C /* objpcre.m in Sources */ = {isa = PBXBuildFile; fileRef = 28435801120A2F0E001D654C /* objpcre.m */; };
 		28475546112F3F84003DE32A /* plus-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 28475545112F3F84003DE32A /* plus-icon.png */; };
 		28475ABD112F83F9003DE32A /* shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 28475ABC112F83F9003DE32A /* shadow.png */; };
 		2847D1A9114AD11600C5326C /* VBXSecurityAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2847D1A5114AD11600C5326C /* VBXSecurityAlertController.m */; };
@@ -67,7 +63,6 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		288B3BDE11A34A250096A815 /* VBXSessionExpiredController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288B3BDC11A34A250096A815 /* VBXSessionExpiredController.m */; };
 		28C12291120A88070086AA3D /* VBXUserDefaultsKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 969CDB2C10C66F89007FCB56 /* VBXUserDefaultsKeys.m */; };
-		28C1230C120A92A80086AA3D /* README in Resources */ = {isa = PBXBuildFile; fileRef = 28C1230B120A92A80086AA3D /* README */; };
 		28C126A5121282040086AA3D /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C126A3121282040086AA3D /* SFHFKeychainUtils.m */; };
 		28C2F96D112DF26400892A64 /* dialer-accessory-key-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C2F968112DF26400892A64 /* dialer-accessory-key-bg.png */; };
 		28C2F96E112DF26400892A64 /* dialer-call-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C2F969112DF26400892A64 /* dialer-call-bg.png */; };
@@ -218,19 +213,6 @@
 		2838CB041112508500426893 /* VBXSetNumberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBXSetNumberController.m; sourceTree = "<group>"; };
 		2838D0001113924200426893 /* VBXGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBXGlobal.h; sourceTree = "<group>"; };
 		2838D0011113924200426893 /* VBXGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBXGlobal.m; sourceTree = "<group>"; };
-		284357F4120A2F0E001D654C /* pcre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcre.h; sourceTree = "<group>"; };
-		284357F5120A2F0E001D654C /* pcre_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcre_internal.h; sourceTree = "<group>"; };
-		284357F6120A2F0E001D654C /* pcre_scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcre_scanner.h; sourceTree = "<group>"; };
-		284357F7120A2F0E001D654C /* pcre_stringpiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcre_stringpiece.h; sourceTree = "<group>"; };
-		284357F8120A2F0E001D654C /* pcrecpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcrecpp.h; sourceTree = "<group>"; };
-		284357F9120A2F0E001D654C /* pcrecpp_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcrecpp_internal.h; sourceTree = "<group>"; };
-		284357FA120A2F0E001D654C /* pcrecpparg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcrecpparg.h; sourceTree = "<group>"; };
-		284357FB120A2F0E001D654C /* pcreposix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcreposix.h; sourceTree = "<group>"; };
-		284357FD120A2F0E001D654C /* libpcre.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpcre.a; sourceTree = "<group>"; };
-		284357FE120A2F0E001D654C /* libpcrecpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpcrecpp.a; sourceTree = "<group>"; };
-		284357FF120A2F0E001D654C /* libpcreposix.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpcreposix.a; sourceTree = "<group>"; };
-		28435800120A2F0E001D654C /* objpcre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objpcre.h; sourceTree = "<group>"; };
-		28435801120A2F0E001D654C /* objpcre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = objpcre.m; sourceTree = "<group>"; };
 		28475372112F2530003DE32A /* VBXSendTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBXSendTextController.h; sourceTree = "<group>"; };
 		28475373112F2530003DE32A /* VBXSendTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBXSendTextController.m; sourceTree = "<group>"; };
 		28475545112F3F84003DE32A /* plus-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plus-icon.png"; path = "Resources/plus-icon.png"; sourceTree = "<group>"; };
@@ -269,7 +251,6 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		288B3BDB11A34A250096A815 /* VBXSessionExpiredController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBXSessionExpiredController.h; sourceTree = "<group>"; };
 		288B3BDC11A34A250096A815 /* VBXSessionExpiredController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBXSessionExpiredController.m; sourceTree = "<group>"; };
-		28C1230B120A92A80086AA3D /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		28C126A2121282040086AA3D /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
 		28C126A3121282040086AA3D /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 		28C2F968112DF26400892A64 /* dialer-accessory-key-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dialer-accessory-key-bg.png"; path = "Resources/dialer-accessory-key-bg.png"; sourceTree = "<group>"; };
@@ -423,7 +404,6 @@
 				284CF7991135D5EE0070FEF3 /* Security.framework in Frameworks */,
 				284BCAFD113DF2AC00EA7884 /* libYAJLIPhone.a in Frameworks */,
 				280CF243113F0838000F4FD7 /* libicucore.dylib in Frameworks */,
-				2843580A120A2F0E001D654C /* libpcre.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +412,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				287226CC11470DF700FD3AAF /* Security.framework in Frameworks */,
-				2843583E120A3527001D654C /* libpcre.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,43 +482,6 @@
 			name = Table;
 			sourceTree = "<group>";
 		};
-		284357F2120A2F0E001D654C /* PCRE */ = {
-			isa = PBXGroup;
-			children = (
-				284357F3120A2F0E001D654C /* include */,
-				284357FC120A2F0E001D654C /* lib */,
-				28435800120A2F0E001D654C /* objpcre.h */,
-				28435801120A2F0E001D654C /* objpcre.m */,
-				28C1230B120A92A80086AA3D /* README */,
-			);
-			path = PCRE;
-			sourceTree = "<group>";
-		};
-		284357F3120A2F0E001D654C /* include */ = {
-			isa = PBXGroup;
-			children = (
-				284357F4120A2F0E001D654C /* pcre.h */,
-				284357F5120A2F0E001D654C /* pcre_internal.h */,
-				284357F6120A2F0E001D654C /* pcre_scanner.h */,
-				284357F7120A2F0E001D654C /* pcre_stringpiece.h */,
-				284357F8120A2F0E001D654C /* pcrecpp.h */,
-				284357F9120A2F0E001D654C /* pcrecpp_internal.h */,
-				284357FA120A2F0E001D654C /* pcrecpparg.h */,
-				284357FB120A2F0E001D654C /* pcreposix.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		284357FC120A2F0E001D654C /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				284357FD120A2F0E001D654C /* libpcre.a */,
-				284357FE120A2F0E001D654C /* libpcrecpp.a */,
-				284357FF120A2F0E001D654C /* libpcreposix.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
 		284BCAF3113DF2AC00EA7884 /* YAJL */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,7 +501,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				284357F2120A2F0E001D654C /* PCRE */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				96AF94A410D1D37100E0DA8B /* Extensions */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -964,7 +905,6 @@
 				280CF57C113F8662000F4FD7 /* barbutton.png in Resources */,
 				284CC46D114199AE006358D2 /* gear.png in Resources */,
 				2847D438114AFD8100C5326C /* security-alert-background.png in Resources */,
-				28C1230C120A92A80086AA3D /* README in Resources */,
 				6637090B128B458600E4451C /* Icon.png in Resources */,
 				66619AC612FB7FFE002FAA85 /* license.html in Resources */,
 			);
@@ -1087,7 +1027,6 @@
 				284CCB1C1145E2B2006358D2 /* VBXTrustHelper.m in Sources */,
 				2847D1A9114AD11600C5326C /* VBXSecurityAlertController.m in Sources */,
 				288B3BDE11A34A250096A815 /* VBXSessionExpiredController.m in Sources */,
-				2843580E120A2F0E001D654C /* objpcre.m in Sources */,
 				66D2219F121132970092D4EA /* VBXAppURL.m in Sources */,
 				28C126A5121282040086AA3D /* SFHFKeychainUtils.m in Sources */,
 				66619A0112FB5AC4002FAA85 /* VBXLicenseController.m in Sources */,
@@ -1104,7 +1043,6 @@
 				96AF930410D1A11200E0DA8B /* SublistTest.m in Sources */,
 				284CCB181145E249006358D2 /* TrustTest.m in Sources */,
 				284CCB1E1145E2B2006358D2 /* VBXTrustHelper.m in Sources */,
-				2843586D120A3DFF001D654C /* objpcre.m in Sources */,
 				28C12291120A88070086AA3D /* VBXUserDefaultsKeys.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1219,10 +1157,7 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "UnitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/PCRE/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -1251,10 +1186,7 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "UnitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/PCRE/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -1282,10 +1214,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				INFOPLIST_FILE = "UnitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/PCRE/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
