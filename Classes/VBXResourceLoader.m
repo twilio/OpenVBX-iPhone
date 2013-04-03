@@ -26,7 +26,6 @@
 #import "NSURLExtensions.h"
 #import "NSExtensions.h"
 #import "VBXUserDefaultsKeys.h"
-#import "NSObject+YAJL.h"
 #import "VBXGlobal.h"
 
 @interface VBXResourceLoader () <VBXURLLoaderDelegate>
@@ -83,7 +82,7 @@
 
 - (BOOL)finishWithData:(NSData *)data fromCache:(BOOL)fromCache hadTrustedCertificate:(BOOL)hadTrustedCertificate {
     NSError *error = nil;
-    id object = [data yajl_JSONWithOptions:YAJLParserOptionsAllowComments error:&error];
+    id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
     
     if (error != nil) {
         debug(@"Got error (%@) while parsing JSON: %@", error, [[[NSString alloc] initWithBytes:[data bytes] length:[data length] encoding:NSUTF8StringEncoding] autorelease]);

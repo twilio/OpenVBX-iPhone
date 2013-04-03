@@ -22,7 +22,6 @@
 #import "VBXResourceRequest.h"
 #import "VBXResourceLoader.h"
 #import "NSExtensions.h"
-#import "NSObject+YAJL.h"
 #import "NSDictionary+merge.h"
 #import "VBXGlobal.h"
 #import "VBXConfiguration.h"
@@ -49,7 +48,7 @@
     NSData *defaultConfigData = [NSData dataWithContentsOfFile:resourcePath];
     
     NSError *error = nil;
-    NSDictionary *dict = [defaultConfigData yajl_JSONWithOptions:YAJLParserOptionsAllowComments error:&error];
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:defaultConfigData options:0 error:&error];
 	
     return dict;
 }

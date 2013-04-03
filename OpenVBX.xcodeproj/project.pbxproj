@@ -47,7 +47,6 @@
 		284BBD641137577100EA7884 /* VBXConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 284BBD621137577100EA7884 /* VBXConfiguration.m */; };
 		284BBE8811376E6100EA7884 /* VBXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 284BBE8611376E6100EA7884 /* VBXTableViewCell.m */; };
 		284BC32D11389E0000EA7884 /* VBXLoadMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 284BC32B11389E0000EA7884 /* VBXLoadMoreCell.m */; };
-		284BCAFD113DF2AC00EA7884 /* libYAJLIPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 284BCAF4113DF2AC00EA7884 /* libYAJLIPhone.a */; };
 		284BCB15113DF34900EA7884 /* VBXSendTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28475373112F2530003DE32A /* VBXSendTextController.m */; };
 		284CC46D114199AE006358D2 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 284CC46C114199AE006358D2 /* gear.png */; };
 		284CC49C11419B99006358D2 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 284CC49A11419B99006358D2 /* NSData+Base64.m */; };
@@ -227,15 +226,6 @@
 		284BC32A11389E0000EA7884 /* VBXLoadMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBXLoadMoreCell.h; sourceTree = "<group>"; };
 		284BC32B11389E0000EA7884 /* VBXLoadMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBXLoadMoreCell.m; sourceTree = "<group>"; };
 		284BC7EB113DA4BB00EA7884 /* hideous-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hideous-config.json"; sourceTree = "<group>"; };
-		284BCAF4113DF2AC00EA7884 /* libYAJLIPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYAJLIPhone.a; sourceTree = "<group>"; };
-		284BCAF5113DF2AC00EA7884 /* NSObject+YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YAJL.h"; sourceTree = "<group>"; };
-		284BCAF6113DF2AC00EA7884 /* YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJL.h; sourceTree = "<group>"; };
-		284BCAF7113DF2AC00EA7884 /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_common.h; sourceTree = "<group>"; };
-		284BCAF8113DF2AC00EA7884 /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_gen.h; sourceTree = "<group>"; };
-		284BCAF9113DF2AC00EA7884 /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parse.h; sourceTree = "<group>"; };
-		284BCAFA113DF2AC00EA7884 /* YAJLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLDocument.h; sourceTree = "<group>"; };
-		284BCAFB113DF2AC00EA7884 /* YAJLGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLGen.h; sourceTree = "<group>"; };
-		284BCAFC113DF2AC00EA7884 /* YAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLParser.h; sourceTree = "<group>"; };
 		284CC46C114199AE006358D2 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gear.png; path = Resources/gear.png; sourceTree = "<group>"; };
 		284CC49911419B99006358D2 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "Classes/NSData+Base64.h"; sourceTree = "<group>"; };
 		284CC49A11419B99006358D2 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "Classes/NSData+Base64.m"; sourceTree = "<group>"; };
@@ -402,7 +392,6 @@
 				28FD28561125DD5C00384850 /* AddressBook.framework in Frameworks */,
 				28FD28581125DD5C00384850 /* AddressBookUI.framework in Frameworks */,
 				284CF7991135D5EE0070FEF3 /* Security.framework in Frameworks */,
-				284BCAFD113DF2AC00EA7884 /* libYAJLIPhone.a in Frameworks */,
 				280CF243113F0838000F4FD7 /* libicucore.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,29 +471,12 @@
 			name = Table;
 			sourceTree = "<group>";
 		};
-		284BCAF3113DF2AC00EA7884 /* YAJL */ = {
-			isa = PBXGroup;
-			children = (
-				284BCAF4113DF2AC00EA7884 /* libYAJLIPhone.a */,
-				284BCAF5113DF2AC00EA7884 /* NSObject+YAJL.h */,
-				284BCAF6113DF2AC00EA7884 /* YAJL.h */,
-				284BCAF7113DF2AC00EA7884 /* yajl_common.h */,
-				284BCAF8113DF2AC00EA7884 /* yajl_gen.h */,
-				284BCAF9113DF2AC00EA7884 /* yajl_parse.h */,
-				284BCAFA113DF2AC00EA7884 /* YAJLDocument.h */,
-				284BCAFB113DF2AC00EA7884 /* YAJLGen.h */,
-				284BCAFC113DF2AC00EA7884 /* YAJLParser.h */,
-			);
-			path = YAJL;
-			sourceTree = "<group>";
-		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
 				96AF94A410D1D37100E0DA8B /* Extensions */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				284BCAF3113DF2AC00EA7884 /* YAJL */,
 				96AF928010D18E7100E0DA8B /* Unit Tests */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -1069,11 +1041,7 @@
 				GCC_PREFIX_HEADER = OpenVBX_Prefix.pch;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "OpenVBX-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/YAJL\"",
-					"\"$(SRCROOT)/PCRE/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = OpenVBX;
 				SDKROOT = iphoneos4.2;
 			};
@@ -1088,11 +1056,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OpenVBX_Prefix.pch;
 				INFOPLIST_FILE = "OpenVBX-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/YAJL\"",
-					"\"$(SRCROOT)/PCRE/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = OpenVBX;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "43502582-FDC1-47A3-863B-37D5EFF81B1F";
 				SDKROOT = iphoneos4.2;
@@ -1133,11 +1097,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OpenVBX_Prefix.pch;
 				INFOPLIST_FILE = "OpenVBX-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/YAJL\"",
-					"\"$(SRCROOT)/PCRE/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = OpenVBX;
 				SDKROOT = iphoneos4.2;
 			};
